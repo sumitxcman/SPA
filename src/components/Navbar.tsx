@@ -110,16 +110,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
                 {link.name}
               </a>
             ))}
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenBooking();
-              }}
-              className="mt-4 w-full flex items-center justify-center space-x-2 py-3 bg-[#C8A96B] text-[#0B0B0B] font-sans text-xs uppercase tracking-widest font-semibold"
-            >
-              <Calendar className="w-4 h-4" />
-              <span>RESERVE SANCTUARY RITUAL</span>
-            </button>
+            {/* Generous Luxury Spacing & Gold Divider for Mobile Reservation CTA */}
+            <div className="pt-6 mt-3 border-t border-[#C8A96B]/30">
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenBooking();
+                }}
+                className="w-full flex items-center justify-center space-x-2 py-3.5 bg-[#C8A96B] hover:bg-[#D8C08A] text-[#0B0B0B] font-sans text-xs uppercase tracking-widest font-bold shadow-lg transition-all"
+              >
+                <Calendar className="w-4 h-4" />
+                <span>RESERVE SANCTUARY RITUAL</span>
+              </button>
+            </div>
           </div>
         </div>
       )}
