@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-obsidian: #0B0B0B;
+  --color-obsidian-900: #070707;
+  --color-obsidian-800: #0B0B0B;
+  --color-obsidian-700: #111111;
+  
+  --color-charcoal: #151515;
+  --color-charcoal-light: #1F1F1F;
+  --color-charcoal-muted: #2A2A2A;
+
+  --color-gold: #C8A96B;
+  --color-gold-royal: #C8A96B;
+  --color-gold-soft: #D8C08A;
+  --color-gold-deep: #9B7E44;
+  --color-gold-light: #E6D5B0;
+  
+  --color-ivory: #F4F0E8;
+  --color-ivory-warm: #F4F0E8;
+  --color-ivory-champagne: #FAF8F3;
+  --color-ivory-dark: #E2DBD0;
+
+  --color-forest: #18251F;
+  --color-forest-deep: #0F1A15;
+  --color-forest-light: #23382F;
+
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-display: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", Inter, Manrope, system-ui, sans-serif;
+
+  --letter-spacing-ultra-wide: 0.25em;
+  --letter-spacing-royal: 0.35em;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #0B0B0B;
+  color: #FAF8F3;
+}
+
+body {
+  background-color: #0B0B0B;
+  color: #FAF8F3;
+  overflow-x: hidden;
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A96B;
+}
+
+/* Luxury Grain & Texture Overlay */
+.luxury-noise {
+  background-image: radial-gradient(rgba(200, 169, 107, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F4F0E8 0%, #D8C08A 45%, #C8A96B 80%, #9B7E44 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Luxury */
+.glass-luxury-dark {
+  background: rgba(11, 11, 11, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 169, 107, 0.15);
+}
+
+.glass-luxury-light {
+  background: rgba(244, 240, 232, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(200, 169, 107, 0.25);
+}
+
+/* Hide scrollbar for clean horizontal scrolls */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
