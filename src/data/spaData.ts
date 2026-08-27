@@ -235,7 +235,7 @@ export const TREATMENTS_DATA: Treatment[] = [
     price: '₹3,300',
     benefits: ['Deep restorative sleep induction', 'Relieves mental chatter', 'Nervous system reset'],
     scents: ['Valerian Root', 'Lavender Fine', 'Vetiver'],
-    image: 'https://images.unsplash.com/photo-1512290900672-1f028b248a39?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1544717302-de2939b7ef71?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'restored'
   },
   {
@@ -351,7 +351,7 @@ export const RITUAL_JOURNEY_STEPS: RitualStep[] = [
     title: 'Awakening in the Tea Pavilion',
     subtitle: 'Gently returning to the world transformed',
     description: 'Transition leisurely in the quiet relaxation rotunda with artisanal rare herbal teas and organic refreshments before stepping back into reality completely rejuvenated.',
-    image: 'https://images.unsplash.com/photo-1512290900672-1f028b248a39?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=1000&auto=format&fit=crop',
     details: ['Single-Estate Herbal Tea Service', 'Organic Delicacies', 'Personalized Home Care Guidance']
   }
 ];
