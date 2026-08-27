@@ -61,9 +61,9 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   ];
 
   const availableAddons = [
-    { id: 'steam', name: 'Private Eucalyptus Steam Session (20 Min)', price: '+$50' },
-    { id: 'gold', name: '24k Gold Facial Scalp Elixir Infusion', price: '+$65' },
-    { id: 'champagne', name: 'Vintage Imperial Champagne & Cacao Service', price: '+$85' }
+    { id: 'steam', name: 'Private Eucalyptus Steam Session (20 Min)', price: '+₹500' },
+    { id: 'gold', name: '24k Gold Facial Scalp Elixir Infusion', price: '+₹750' },
+    { id: 'champagne', name: 'Vintage Imperial Champagne & Cacao Service', price: '+₹950' }
   ];
 
   const toggleAddon = (id: string) => {
