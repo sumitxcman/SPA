@@ -62,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
         </a>
 
         {/* Center: Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center space-x-7">
+        <nav className="hidden lg:flex items-center space-x-5 xl:space-x-7">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -74,8 +74,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           ))}
         </nav>
 
-        {/* Right: Premium CTA Button & Mobile Trigger */}
-        <div className="flex items-center space-x-4">
+        {/* Right: Premium CTA Button & Mobile Trigger with added left margin */}
+        <div className="flex items-center space-x-4 ml-6 lg:ml-10 xl:ml-12 shrink-0">
           <button
             onClick={() => onOpenBooking()}
             data-cursor="book"
