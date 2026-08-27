@@ -46,6 +46,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             THE ORDINARY.
           </h1>
 
+          {/* Mobile-Only Editorial Image Showcase (Phone View Exclusive) */}
+          <div className="block md:hidden mb-6 relative overflow-hidden border border-[#C8A96B]/40 shadow-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop"
+              alt="The Royal Massage Spa Experience"
+              className="w-full h-52 object-cover filter brightness-95"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B]/85 via-transparent to-transparent" />
+            <div className="absolute bottom-3 left-3 bg-[#0B0B0B]/90 backdrop-blur-sm px-2.5 py-1 border border-[#C8A96B]/40">
+              <span className="font-serif text-[11px] text-[#C8A96B] tracking-wider uppercase font-medium">
+                KASA ROYAL SANCTUARY • DWARKA
+              </span>
+            </div>
+          </div>
+
           {/* Supporting Text */}
           <p className="font-sans text-base sm:text-lg text-[#F4F0E8]/80 font-light max-w-xl leading-relaxed mb-10 border-l border-[#C8A96B]/40 pl-5">
             Where timeless wellness rituals meet modern luxury. Step inside our private sanctuary and let every boundary of stress dissolve into stillness.
