@@ -32,8 +32,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-[#0B0B0B]/90 backdrop-blur-md border-b border-[#FBE8A6]/25 py-3 shadow-2xl'
-          : 'bg-gradient-to-b from-[#0B0B0B]/90 via-[#0B0B0B]/40 to-transparent py-6 border-b border-transparent'
+          ? 'bg-white/95 backdrop-blur-md border-b border-[#C8A96B]/30 py-3 shadow-md'
+          : 'bg-gradient-to-b from-white/95 via-white/70 to-transparent py-5 border-b border-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           href="#hero"
           className="group flex items-center space-x-3 text-left focus:outline-none shrink-0"
         >
-          <div className="w-9 h-9 rounded-full border border-[#FBE8A6]/70 flex items-center justify-center bg-[#151515] group-hover:border-[#FBE8A6] transition-all duration-300 shadow-[0_0_12px_rgba(251,232,166,0.25)] shrink-0">
+          <div className="w-9 h-9 rounded-full border border-[#C8A96B] flex items-center justify-center bg-[#0B0B0B] group-hover:border-[#9B7E44] transition-all duration-300 shadow-md shrink-0">
             <svg className="w-5 h-5" viewBox="0 0 100 100" fill="none">
               <defs>
                 <linearGradient id="navLogoGold" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -63,10 +63,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </svg>
           </div>
           <div className="flex items-center space-x-2 whitespace-nowrap">
-            <span className="font-serif text-sm sm:text-base font-semibold tracking-wider text-[#FFFFFF] uppercase leading-none group-hover:text-[#FBE8A6] transition-colors">
+            <span className="font-serif text-sm sm:text-base font-bold tracking-wider text-[#0B0B0B] uppercase leading-none group-hover:text-[#9B7E44] transition-colors">
               THE ROYAL
             </span>
-            <span className="font-sans text-[10px] sm:text-[11px] tracking-[0.2em] text-[#FBE8A6] uppercase font-bold leading-none">
+            <span className="font-sans text-[10px] sm:text-[11px] tracking-[0.2em] text-[#9B7E44] uppercase font-bold leading-none">
               MASSAGE SPA
             </span>
           </div>
@@ -78,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             <a
               key={link.name}
               href={link.href}
-              className="font-sans text-xs uppercase tracking-[0.2em] text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors duration-200 relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#FBE8A6] hover:after:w-full after:transition-all after:duration-300"
+              className="font-sans text-xs uppercase tracking-[0.2em] text-[#151515] hover:text-[#9B7E44] font-semibold transition-colors duration-200 relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-[#9B7E44] hover:after:w-full after:transition-all after:duration-300"
             >
               {link.name}
             </a>
@@ -90,9 +90,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           <button
             onClick={() => onOpenBooking()}
             data-cursor="book"
-            className="hidden sm:inline-flex items-center space-x-2 px-5 py-2.5 rounded-none border border-[#FBE8A6] bg-[#FBE8A6] hover:bg-[#FFF4CC] text-[#0B0B0B] font-sans text-xs uppercase tracking-[0.2em] font-bold transition-all duration-300 shadow-[0_0_15px_rgba(251,232,166,0.25)] hover:shadow-[0_0_25px_rgba(251,232,166,0.5)] cursor-pointer"
+            className="hidden sm:inline-flex items-center space-x-2 px-5 py-2.5 rounded-none border border-[#0B0B0B] bg-[#0B0B0B] hover:bg-[#9B7E44] text-[#FFFFFF] font-sans text-xs uppercase tracking-[0.2em] font-bold transition-all duration-300 shadow-md hover:shadow-xl cursor-pointer"
           >
-            <Sparkles className="w-3.5 h-3.5 text-[#0B0B0B]" />
+            <Sparkles className="w-3.5 h-3.5 text-[#FBE8A6]" />
             <span>BOOK YOUR RITUAL</span>
           </button>
 
@@ -100,37 +100,37 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Mobile Menu"
-            className="lg:hidden p-2 text-[#FFFFFF] hover:text-[#FBE8A6] focus:outline-none"
+            className="lg:hidden p-2 text-[#0B0B0B] hover:text-[#9B7E44] focus:outline-none"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6 text-[#FBE8A6]" /> : <Menu className="w-6 h-6 text-[#FFFFFF]" />}
+            {mobileMenuOpen ? <X className="w-6 h-6 text-[#0B0B0B]" /> : <Menu className="w-6 h-6 text-[#0B0B0B]" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#0B0B0B]/98 backdrop-blur-2xl border-b border-[#FBE8A6]/30 px-6 pt-6 pb-8 transition-all animate-fade-in">
+        <div className="lg:hidden bg-white/98 backdrop-blur-2xl border-b border-[#C8A96B]/30 px-6 pt-6 pb-8 transition-all shadow-2xl animate-fade-in">
           <div className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="font-serif text-lg tracking-wider text-[#FFFFFF] hover:text-[#FBE8A6] transition-colors py-2 border-b border-[#1F1F1F]"
+                className="font-serif text-lg tracking-wider text-[#0B0B0B] hover:text-[#9B7E44] font-semibold transition-colors py-2 border-b border-[#E5E5E5]"
               >
                 {link.name}
               </a>
             ))}
-            {/* Generous Luxury Spacing & Light Yellow Divider for Mobile Reservation CTA */}
-            <div className="pt-6 mt-3 border-t border-[#FBE8A6]/30">
+            {/* Mobile Reservation CTA */}
+            <div className="pt-6 mt-3 border-t border-[#C8A96B]/30">
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenBooking();
                 }}
-                className="w-full flex items-center justify-center space-x-2 py-3.5 bg-[#FBE8A6] hover:bg-[#FFF4CC] text-[#0B0B0B] font-sans text-xs uppercase tracking-widest font-bold shadow-lg transition-all"
+                className="w-full flex items-center justify-center space-x-2 py-3.5 bg-[#0B0B0B] hover:bg-[#9B7E44] text-[#FFFFFF] font-sans text-xs uppercase tracking-widest font-bold shadow-lg transition-all"
               >
-                <Calendar className="w-4 h-4 text-[#0B0B0B]" />
+                <Calendar className="w-4 h-4 text-[#FBE8A6]" />
                 <span>RESERVE SANCTUARY RITUAL</span>
               </button>
             </div>

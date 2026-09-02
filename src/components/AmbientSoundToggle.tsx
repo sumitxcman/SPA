@@ -88,20 +88,20 @@ export const AmbientSoundToggle: React.FC = () => {
         data-cursor="pointer"
         className={`flex items-center space-x-2.5 px-4 py-2.5 border rounded-none text-xs font-sans uppercase tracking-[0.2em] transition-all duration-300 backdrop-blur-md shadow-xl ${
           isPlaying
-            ? 'bg-[#FBE8A6] text-[#0B0B0B] border-[#FBE8A6] shadow-[0_0_20px_rgba(251,232,166,0.35)] font-bold'
-            : 'bg-[#0B0B0B]/90 text-[#FFFFFF]/80 hover:text-[#FBE8A6] border-[#FBE8A6]/30 hover:border-[#FBE8A6]'
+            ? 'bg-[#0B0B0B] text-[#FFFFFF] border-[#0B0B0B] shadow-lg font-bold'
+            : 'bg-white/95 text-[#0B0B0B] hover:text-[#9B7E44] border-[#0B0B0B]/20 hover:border-[#0B0B0B]'
         }`}
         aria-label="Toggle Spa Atmospheric Drone"
       >
         {isPlaying ? (
           <>
-            <Volume2 className="w-3.5 h-3.5 animate-pulse text-[#0B0B0B]" />
+            <Volume2 className="w-3.5 h-3.5 animate-pulse text-[#FBE8A6]" />
             <span className="font-bold text-[10px]">ATMOSPHERE: ON</span>
           </>
         ) : (
           <>
-            <VolumeX className="w-3.5 h-3.5 text-[#FBE8A6]" />
-            <span className="text-[10px]">ATMOSPHERE: OFF</span>
+            <VolumeX className="w-3.5 h-3.5 text-[#9B7E44]" />
+            <span className="text-[10px] font-bold">ATMOSPHERE: OFF</span>
           </>
         )}
       </button>
