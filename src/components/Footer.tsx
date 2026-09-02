@@ -1,5 +1,5 @@
 import React from 'react';
-import { Crown, MessageSquare, MapPin, Mail, ArrowUp, Globe } from 'lucide-react';
+import { MessageSquare, MapPin, Mail, ArrowUp, Globe } from 'lucide-react';
 
 interface FooterProps {
   onOpenBooking: () => void;
@@ -11,7 +11,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
   };
 
   return (
-    <footer className="relative bg-[#070707] text-[#FAF8F3] pt-20 sm:pt-24 pb-12 overflow-hidden border-t border-[#C8A96B]/20">
+    <footer className="relative bg-[#070707] text-[#FFFFFF] pt-20 sm:pt-24 pb-12 overflow-hidden border-t border-[#FBE8A6]/20">
       
       {/* Background Subtle Noise */}
       <div className="absolute inset-0 luxury-noise pointer-events-none opacity-20" />
@@ -21,24 +21,24 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
         {/* Huge Statement Headline */}
         <div className="border-b border-[#1F1F1F] pb-14 sm:pb-16 mb-14 sm:mb-16 flex flex-col lg:flex-row lg:items-end justify-between gap-8">
           <div>
-            <span className="font-sans text-xs tracking-[0.4em] text-[#C8A96B] uppercase font-semibold block mb-4">
+            <span className="font-sans text-xs tracking-[0.4em] text-[#FBE8A6] uppercase font-bold block mb-4">
               ENTER YOUR SOVEREIGN STATE
             </span>
-            <h2 className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-light text-[#FAF8F3] uppercase leading-[0.95] tracking-tight">
+            <h2 className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-light text-[#FFFFFF] uppercase leading-[0.95] tracking-tight">
               YOUR <br />
-              <span className="italic text-[#C8A96B]">WELLNESS</span> <br />
+              <span className="italic text-[#FBE8A6]">WELLNESS</span> <br />
               AWAITING.
             </h2>
           </div>
 
           <div className="space-y-4 max-w-sm">
-            <p className="font-sans text-xs sm:text-sm text-[#F4F0E8]/70 font-light leading-relaxed">
+            <p className="font-sans text-xs sm:text-sm text-[#FFFFFF]/80 font-light leading-relaxed">
               Step across our threshold in Sector 6 Dwarka, Delhi and experience round-the-clock imperial relaxation.
             </p>
             <button
               onClick={onOpenBooking}
               data-cursor="book"
-              className="w-full sm:w-auto px-8 py-4 bg-[#C8A96B] hover:bg-[#D8C08A] text-[#0B0B0B] font-sans text-xs uppercase tracking-[0.25em] font-bold transition-all shadow-xl cursor-pointer"
+              className="w-full sm:w-auto px-8 py-4 bg-[#FBE8A6] hover:bg-[#FFF4CC] text-[#0B0B0B] font-sans text-xs uppercase tracking-[0.25em] font-bold transition-all shadow-xl cursor-pointer"
             >
               BOOK YOUR RITUAL NOW
             </button>
@@ -51,14 +51,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 rounded-full border border-[#C8A96B] flex items-center justify-center bg-[#151515] shadow-[0_0_10px_rgba(200,169,107,0.2)]">
+              <div className="w-8 h-8 rounded-full border border-[#FBE8A6] flex items-center justify-center bg-[#151515] shadow-[0_0_10px_rgba(251,232,166,0.25)]">
                 <svg className="w-4 h-4" viewBox="0 0 100 100" fill="none">
                   <defs>
                     <linearGradient id="footerLogoGold" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stop-color="#FAF8F3" />
-                      <stop offset="40%" stop-color="#D8C08A" />
-                      <stop offset="75%" stop-color="#C8A96B" />
-                      <stop offset="100%" stop-color="#9B7E44" />
+                      <stop offset="0%" stop-color="#FFFFFF" />
+                      <stop offset="40%" stop-color="#FFF4CC" />
+                      <stop offset="75%" stop-color="#FBE8A6" />
+                      <stop offset="100%" stop-color="#F4D06F" />
                     </linearGradient>
                   </defs>
                   <g fill="url(#footerLogoGold)">
@@ -70,57 +70,57 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                   </g>
                 </svg>
               </div>
-              <span className="font-serif text-lg tracking-widest text-[#FAF8F3] uppercase">
+              <span className="font-serif text-lg tracking-widest text-[#FFFFFF] uppercase">
                 THE ROYAL MASSAGE SPA
               </span>
             </div>
-            <p className="font-sans text-xs text-[#F4F0E8]/60 font-light leading-relaxed max-w-xs">
+            <p className="font-sans text-xs text-[#FFFFFF]/75 font-light leading-relaxed max-w-xs">
               An all-inclusive 4.8★ Google rated private sanctuary with Jacuzzi, Sauna, Steam rooms, and bespoke somatic therapies in Dwarka, Delhi.
             </p>
-            <span className="inline-block text-[11px] font-sans text-[#C8A96B] bg-[#151515] px-3 py-1 border border-[#C8A96B]/30">
+            <span className="inline-block text-[11px] font-sans text-[#FBE8A6] bg-[#151515] px-3 py-1 border border-[#FBE8A6]/30 font-semibold">
               Women-Owned & Dedicated Care
             </span>
           </div>
 
           {/* Col 2: Navigation Links */}
           <div className="lg:col-span-3 space-y-3">
-            <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#C8A96B] font-semibold block mb-4">
+            <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#FBE8A6] font-bold block mb-4">
               SANCTUARY NAVIGATION
             </span>
             <ul className="space-y-2 text-xs font-sans">
-              <li><a href="#hero" className="text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors">Home Experience</a></li>
-              <li><a href="#philosophy" className="text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors">The Philosophy</a></li>
-              <li><a href="#experience" className="text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors">Signature Experiences</a></li>
-              <li><a href="#treatments" className="text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors">Treatment Menu</a></li>
-              <li><a href="#mood" className="text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors">Choose Your Mood</a></li>
-              <li><a href="#rituals" className="text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors">The 4-Stage Odyssey</a></li>
-              <li><a href="#sanctuary" className="text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors">Interior Gallery</a></li>
-              <li><a href="#privilege" className="text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors">Royal Privilege Membership</a></li>
+              <li><a href="#hero" className="text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors">Home Experience</a></li>
+              <li><a href="#philosophy" className="text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors">The Philosophy</a></li>
+              <li><a href="#experience" className="text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors">Signature Experiences</a></li>
+              <li><a href="#treatments" className="text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors">Treatment Menu</a></li>
+              <li><a href="#mood" className="text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors">Choose Your Mood</a></li>
+              <li><a href="#rituals" className="text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors">The 4-Stage Odyssey</a></li>
+              <li><a href="#sanctuary" className="text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors">Interior Gallery</a></li>
+              <li><a href="#privilege" className="text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors">Royal Privilege Membership</a></li>
             </ul>
           </div>
 
           {/* Col 3: Hours & Location */}
           <div className="lg:col-span-3 space-y-3">
-            <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#C8A96B] font-semibold block mb-4">
+            <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#FBE8A6] font-bold block mb-4">
               SANCTUARY LOCATION & HOURS
             </span>
-            <div className="space-y-2 text-xs font-sans text-[#FAF8F3]/80 font-light">
-              <div className="text-[#C8A96B] font-semibold flex items-center space-x-1.5">
+            <div className="space-y-2 text-xs font-sans text-[#FFFFFF]/85 font-light">
+              <div className="text-[#FBE8A6] font-bold flex items-center space-x-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-400" />
                 <span>OPEN 24 HOURS (MON — SUN)</span>
               </div>
-              <p className="pt-2 text-[#FAF8F3]/90">
+              <p className="pt-2 text-[#FFFFFF]/90">
                 Central Market, Sec-6 Market,<br />
                 Sector 6 Dwarka, Dwarka,<br />
                 Delhi, 110075
               </p>
-              <span className="text-[#C8A96B] text-[11px] block">Plus Code: H3R6+43 Delhi</span>
+              <span className="text-[#FBE8A6] text-[11px] block font-semibold">Plus Code: H3R6+43 Delhi</span>
             </div>
           </div>
 
           {/* Col 4: Social & Direct Links */}
           <div className="lg:col-span-2 space-y-3">
-            <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#C8A96B] font-semibold block mb-4">
+            <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#FBE8A6] font-bold block mb-4">
               CONNECT
             </span>
             <div className="space-y-2.5 text-xs font-sans">
@@ -128,9 +128,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 href="https://theroyalspa.in"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors"
+                className="flex items-center space-x-2 text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors"
               >
-                <Globe className="w-3.5 h-3.5 text-[#C8A96B]" />
+                <Globe className="w-3.5 h-3.5 text-[#FBE8A6]" />
                 <span>theroyalspa.in</span>
               </a>
 
@@ -138,7 +138,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 href="https://wa.me/?text=Hello%20The%20Royal%20Spa%20Dwarka"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors"
+                className="flex items-center space-x-2 text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors"
               >
                 <MessageSquare className="w-3.5 h-3.5 text-[#25D366]" />
                 <span>WhatsApp Us</span>
@@ -148,17 +148,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 href="https://maps.google.com/?q=Sector+6+Dwarka+Delhi+110075"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors"
+                className="flex items-center space-x-2 text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors"
               >
-                <MapPin className="w-3.5 h-3.5 text-[#C8A96B]" />
+                <MapPin className="w-3.5 h-3.5 text-[#FBE8A6]" />
                 <span>Google Maps</span>
               </a>
 
               <a
                 href="mailto:services@theroyalspa.in"
-                className="flex items-center space-x-2 text-[#FAF8F3]/80 hover:text-[#C8A96B] transition-colors"
+                className="flex items-center space-x-2 text-[#FFFFFF]/80 hover:text-[#FBE8A6] transition-colors"
               >
-                <Mail className="w-3.5 h-3.5 text-[#C8A96B]" />
+                <Mail className="w-3.5 h-3.5 text-[#FBE8A6]" />
                 <span>Email Services</span>
               </a>
             </div>
@@ -167,22 +167,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
         </div>
 
         {/* Bottom Bar & Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-[#FAF8F3]/50">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans text-[#FFFFFF]/60">
           <div>
             © {new Date().getFullYear()} The Royal Massage Spa (theroyalspa.in). Sector 6 Dwarka, Delhi.
           </div>
 
           <div className="flex items-center space-x-6">
-            <span className="hover:text-[#FAF8F3] transition-colors cursor-pointer">Privacy Protocol</span>
+            <span className="hover:text-[#FBE8A6] transition-colors cursor-pointer">Privacy Protocol</span>
             <span>•</span>
-            <span className="hover:text-[#FAF8F3] transition-colors cursor-pointer">Sanctuary Terms</span>
+            <span className="hover:text-[#FBE8A6] transition-colors cursor-pointer">Sanctuary Terms</span>
             <span>•</span>
             <button
               onClick={scrollToTop}
-              className="flex items-center space-x-1 text-[#C8A96B] hover:text-[#D8C08A] transition-colors cursor-pointer"
+              className="flex items-center space-x-1.5 text-[#FBE8A6] hover:text-[#FFF4CC] transition-colors cursor-pointer"
             >
-              <span>TOP</span>
-              <ArrowUp className="w-3 h-3" />
+              <span>Back to Top</span>
+              <ArrowUp className="w-3.5 h-3.5" />
             </button>
           </div>
         </div>

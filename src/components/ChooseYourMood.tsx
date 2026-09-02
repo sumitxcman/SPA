@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { MOOD_OPTIONS, MoodOption } from '../data/spaData';
-import { Sparkles, ArrowRight, Compass, Wind, Flame, Droplets, Leaf } from 'lucide-react';
+import { MOOD_OPTIONS } from '../data/spaData';
+import { Sparkles, ArrowRight, Wind, Flame, Droplets, Leaf } from 'lucide-react';
 
 interface ChooseYourMoodProps {
   onOpenBooking: (treatmentName?: string) => void;
@@ -21,7 +21,7 @@ export const ChooseYourMood: React.FC<ChooseYourMoodProps> = ({ onOpenBooking })
   const IconComponent = moodIcons[activeMoodId] || Sparkles;
 
   return (
-    <section id="mood" className="relative min-h-[750px] flex items-center py-20 sm:py-28 md:py-36 bg-[#0B0B0B] text-[#FAF8F3] overflow-hidden">
+    <section id="mood" className="relative min-h-[750px] flex items-center py-20 sm:py-28 md:py-36 bg-[#0B0B0B] text-[#FFFFFF] overflow-hidden">
       
       {/* Dynamic Background Crossfade Image */}
       {MOOD_OPTIONS.map((mood) => (
@@ -46,17 +46,17 @@ export const ChooseYourMood: React.FC<ChooseYourMoodProps> = ({ onOpenBooking })
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center space-x-3 mb-3">
-            <span className="h-[1px] w-8 bg-[#C8A96B]" />
-            <span className="font-sans text-xs tracking-[0.35em] text-[#C8A96B] font-medium uppercase">
+            <span className="h-[1px] w-8 bg-[#FBE8A6]" />
+            <span className="font-sans text-xs tracking-[0.35em] text-[#FBE8A6] font-semibold uppercase">
               SENSORY GUIDANCE
             </span>
-            <span className="h-[1px] w-8 bg-[#C8A96B]" />
+            <span className="h-[1px] w-8 bg-[#FBE8A6]" />
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light tracking-tight text-[#FAF8F3] uppercase">
-            HOW DO YOU <span className="italic text-[#C8A96B]">WANT TO FEEL?</span>
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light tracking-tight text-[#FFFFFF] uppercase">
+            HOW DO YOU <span className="italic text-[#FBE8A6]">WANT TO FEEL?</span>
           </h2>
-          <p className="font-sans text-xs sm:text-sm text-[#F4F0E8]/70 font-light mt-2">
+          <p className="font-sans text-xs sm:text-sm text-[#FFFFFF]/80 font-light mt-2">
             Select your desired state to reveal your tailored therapeutic protocol.
           </p>
         </div>
@@ -73,17 +73,17 @@ export const ChooseYourMood: React.FC<ChooseYourMoodProps> = ({ onOpenBooking })
                 data-cursor="pointer"
                 className={`group py-4 sm:py-5 px-3 sm:px-6 text-center border transition-all duration-500 cursor-pointer relative overflow-hidden ${
                   isActive
-                    ? 'bg-[#C8A96B] text-[#0B0B0B] border-[#C8A96B] shadow-[0_0_30px_rgba(200,169,107,0.3)] scale-[1.02]'
-                    : 'bg-[#151515]/80 hover:bg-[#1F1F1F] text-[#FAF8F3] border-[#C8A96B]/20 hover:border-[#C8A96B]/60'
+                    ? 'bg-[#FBE8A6] text-[#0B0B0B] border-[#FBE8A6] shadow-[0_0_30px_rgba(251,232,166,0.35)] scale-[1.02]'
+                    : 'bg-[#151515]/90 hover:bg-[#1F1F1F] text-[#FFFFFF] border-[#FBE8A6]/20 hover:border-[#FBE8A6]/60'
                 }`}
               >
                 <span className={`font-serif text-base sm:text-xl md:text-2xl tracking-widest uppercase block font-medium transition-colors ${
-                  isActive ? 'text-[#0B0B0B]' : 'text-[#FAF8F3] group-hover:text-[#C8A96B]'
+                  isActive ? 'text-[#0B0B0B] font-bold' : 'text-[#FFFFFF] group-hover:text-[#FBE8A6]'
                 }`}>
                   {mood.label}
                 </span>
                 <span className={`font-sans text-[9px] sm:text-[10px] tracking-wider uppercase block mt-1 transition-colors ${
-                  isActive ? 'text-[#0B0B0B]/80 font-medium' : 'text-[#C8A96B]/70'
+                  isActive ? 'text-[#0B0B0B]/90 font-bold' : 'text-[#FBE8A6]/80'
                 }`}>
                   Select State
                 </span>
@@ -93,55 +93,55 @@ export const ChooseYourMood: React.FC<ChooseYourMoodProps> = ({ onOpenBooking })
         </div>
 
         {/* Recommended Experience Card for Active Mood */}
-        <div className="max-w-4xl mx-auto bg-[#151515]/90 backdrop-blur-xl border border-[#C8A96B]/40 p-6 sm:p-10 shadow-2xl transition-all duration-700">
+        <div className="max-w-4xl mx-auto bg-[#151515]/95 backdrop-blur-xl border border-[#FBE8A6]/40 p-6 sm:p-10 shadow-2xl transition-all duration-700">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center">
             
             {/* Left Info Column */}
             <div className="md:col-span-7 space-y-3">
-              <div className="inline-flex items-center space-x-2 text-[#C8A96B] text-xs uppercase tracking-widest">
+              <div className="inline-flex items-center space-x-2 text-[#FBE8A6] text-xs uppercase tracking-widest font-semibold">
                 <IconComponent className="w-4 h-4" />
                 <span>RECOMMENDED PROTOCOL</span>
               </div>
 
-              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#FAF8F3] uppercase leading-snug">
+              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#FFFFFF] uppercase leading-snug">
                 {currentMood.title}
               </h3>
 
-              <p className="font-sans text-xs sm:text-sm text-[#F4F0E8]/80 font-light leading-relaxed">
+              <p className="font-sans text-xs sm:text-sm text-[#FFFFFF]/80 font-light leading-relaxed">
                 {currentMood.subtext}
               </p>
 
               <div className="pt-2 space-y-1.5 text-xs font-sans">
-                <div className="flex items-center space-x-2 text-[#FAF8F3]/90">
-                  <span className="text-[#C8A96B] uppercase tracking-wider font-semibold min-w-[100px]">Aroma:</span>
+                <div className="flex items-center space-x-2 text-[#FFFFFF]/90">
+                  <span className="text-[#FBE8A6] uppercase tracking-wider font-semibold min-w-[100px]">Aroma:</span>
                   <span className="font-light">{currentMood.aromaNote}</span>
                 </div>
-                <div className="flex items-center space-x-2 text-[#FAF8F3]/90">
-                  <span className="text-[#C8A96B] uppercase tracking-wider font-semibold min-w-[100px]">Modality:</span>
+                <div className="flex items-center space-x-2 text-[#FFFFFF]/90">
+                  <span className="text-[#FBE8A6] uppercase tracking-wider font-semibold min-w-[100px]">Modality:</span>
                   <span className="font-light">{currentMood.technique}</span>
                 </div>
               </div>
             </div>
 
             {/* Right Treatment Action Column */}
-            <div className="md:col-span-5 bg-[#0B0B0B] p-5 sm:p-7 border border-[#C8A96B]/30 flex flex-col justify-between space-y-5">
+            <div className="md:col-span-5 bg-[#0B0B0B] p-5 sm:p-7 border border-[#FBE8A6]/30 flex flex-col justify-between space-y-5">
               <div>
-                <span className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#C8A96B] block mb-1">
+                <span className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#FBE8A6] block mb-1 font-semibold">
                   PRESCRIBED TREATMENT
                 </span>
-                <h4 className="font-serif text-lg sm:text-xl text-[#FAF8F3] uppercase">
+                <h4 className="font-serif text-lg sm:text-xl text-[#FFFFFF] uppercase">
                   {currentMood.recommendedTreatment}
                 </h4>
-                <div className="flex items-baseline space-x-3 mt-1.5 text-[#C8A96B]">
+                <div className="flex items-baseline space-x-3 mt-1.5 text-[#FBE8A6]">
                   <span className="font-serif text-xl sm:text-2xl font-bold">{currentMood.treatmentPrice}</span>
-                  <span className="text-xs font-sans text-[#FAF8F3]/60 uppercase tracking-widest">{currentMood.treatmentDuration}</span>
+                  <span className="text-xs font-sans text-[#FFFFFF]/70 uppercase tracking-widest">{currentMood.treatmentDuration}</span>
                 </div>
               </div>
 
               <button
                 onClick={() => onOpenBooking(currentMood.recommendedTreatment)}
                 data-cursor="book"
-                className="w-full py-3 bg-[#C8A96B] hover:bg-[#D8C08A] text-[#0B0B0B] font-sans text-xs uppercase tracking-[0.2em] font-bold flex items-center justify-center space-x-2 transition-all duration-300 shadow-lg cursor-pointer"
+                className="w-full py-3 bg-[#FBE8A6] hover:bg-[#FFF4CC] text-[#0B0B0B] font-sans text-xs uppercase tracking-[0.2em] font-bold flex items-center justify-center space-x-2 transition-all duration-300 shadow-lg cursor-pointer"
               >
                 <span>RESERVE THIS STATE</span>
                 <ArrowRight className="w-4 h-4" />

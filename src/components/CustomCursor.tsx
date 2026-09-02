@@ -61,25 +61,25 @@ export const CustomCursor: React.FC = () => {
       }}
     >
       {cursorType === 'view' && (
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#C8A96B] text-[#0B0B0B] font-serif text-xs font-semibold tracking-widest shadow-2xl scale-100 transition-all duration-200">
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#FBE8A6] text-[#0B0B0B] font-serif text-xs font-bold tracking-widest shadow-2xl scale-100 transition-all duration-200">
           VIEW
         </div>
       )}
 
       {cursorType === 'book' && (
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#FAF8F3] text-[#0B0B0B] font-sans text-xs font-bold tracking-widest shadow-2xl scale-105 transition-all duration-200">
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#FFFFFF] text-[#0B0B0B] font-sans text-xs font-bold tracking-widest shadow-2xl scale-105 transition-all duration-200">
           BOOK
         </div>
       )}
 
       {cursorType === 'pointer' && (
-        <div className="h-9 w-9 rounded-full border border-[#C8A96B] bg-[#C8A96B]/20 backdrop-blur-xs scale-110 transition-all duration-150" />
+        <div className="h-9 w-9 rounded-full border border-[#FBE8A6] bg-[#FBE8A6]/20 backdrop-blur-xs scale-110 transition-all duration-150" />
       )}
 
       {cursorType === 'default' && (
         <div className="flex items-center justify-center h-6 w-6">
-          <div className="h-2 w-2 rounded-full bg-[#C8A96B]" />
-          <div className="absolute h-6 w-6 rounded-full border border-[#C8A96B]/40 animate-ping opacity-30" />
+          <div className="h-2 w-2 rounded-full bg-[#FBE8A6]" />
+          <div className="absolute h-6 w-6 rounded-full border border-[#FBE8A6]/40 animate-ping opacity-30" />
         </div>
       )}
     </div>

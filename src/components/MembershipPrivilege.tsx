@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MEMBERSHIP_PLANS, MembershipPlan } from '../data/spaData';
-import { Crown, Check, Sparkles, X, CheckCircle2 } from 'lucide-react';
+import { Check, Sparkles, X, CheckCircle2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 interface MembershipPrivilegeProps {
@@ -35,34 +35,33 @@ export const MembershipPrivilege: React.FC<MembershipPrivilegeProps> = ({ onOpen
         particleCount: 50,
         spread: 60,
         origin: { y: 0.6 },
-        colors: ['#C8A96B', '#D8C08A', '#FAF8F3']
+        colors: ['#FBE8A6', '#FFF4CC', '#FFFFFF']
       });
     }, 800);
   };
 
   return (
-    <section id="privilege" className="relative py-20 sm:py-28 md:py-36 bg-[#0B0B0B] text-[#FAF8F3] overflow-hidden">
+    <section id="privilege" className="relative py-20 sm:py-28 md:py-36 bg-[#0B0B0B] text-[#FFFFFF] overflow-hidden">
       
-      {/* Background Decorative Gold Radial */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#C8A96B]/5 rounded-full blur-3xl pointer-events-none" />
+      {/* Background Decorative Radial */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FBE8A6]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-20">
           <div className="inline-flex items-center space-x-3 mb-4">
-            <span className="h-[1px] w-8 bg-[#C8A96B]" />
-            <Crown className="w-4 h-4 text-[#C8A96B]" />
-            <span className="font-sans text-xs tracking-[0.35em] text-[#C8A96B] font-medium uppercase">
+            <span className="h-[1px] w-8 bg-[#FBE8A6]" />
+            <span className="font-sans text-xs tracking-[0.35em] text-[#FBE8A6] font-semibold uppercase">
               EXECUTIVE CONCIERGE TIERS
             </span>
-            <span className="h-[1px] w-8 bg-[#C8A96B]" />
+            <span className="h-[1px] w-8 bg-[#FBE8A6]" />
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light tracking-tight text-[#FAF8F3] uppercase">
-            THE ROYAL <span className="italic text-[#C8A96B]">PRIVILEGE</span>
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light tracking-tight text-[#FFFFFF] uppercase">
+            THE ROYAL <span className="italic text-[#FBE8A6]">PRIVILEGE</span>
           </h2>
-          <p className="font-sans text-sm sm:text-base text-[#F4F0E8]/70 font-light mt-3">
+          <p className="font-sans text-sm sm:text-base text-[#FFFFFF]/80 font-light mt-3">
             “For those who believe wellness should become an elevated sacred ritual.”
           </p>
         </div>
@@ -74,12 +73,12 @@ export const MembershipPrivilege: React.FC<MembershipPrivilegeProps> = ({ onOpen
               key={plan.id}
               className={`relative bg-[#151515] p-6 sm:p-10 flex flex-col justify-between transition-all duration-500 border ${
                 plan.popular
-                  ? 'border-[#C8A96B] shadow-[0_0_35px_rgba(200,169,107,0.15)] lg:-translate-y-3'
-                  : 'border-[#C8A96B]/25 hover:border-[#C8A96B]/60'
+                  ? 'border-[#FBE8A6] shadow-[0_0_35px_rgba(251,232,166,0.15)] lg:-translate-y-3'
+                  : 'border-[#FBE8A6]/25 hover:border-[#FBE8A6]/70'
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#C8A96B] text-[#0B0B0B] font-sans text-[10px] uppercase tracking-[0.25em] font-bold px-4 py-1">
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#FBE8A6] text-[#0B0B0B] font-sans text-[10px] uppercase tracking-[0.25em] font-bold px-4 py-1 shadow-md">
                   MOST COVETED
                 </div>
               )}
@@ -87,45 +86,48 @@ export const MembershipPrivilege: React.FC<MembershipPrivilegeProps> = ({ onOpen
               <div>
                 {/* Tier Title */}
                 <div className="text-center pb-6 border-b border-[#1F1F1F]">
-                  <span className="font-sans text-[10px] tracking-[0.3em] text-[#C8A96B] uppercase block mb-1">
+                  <span className="font-sans text-[10px] tracking-[0.3em] text-[#FBE8A6] uppercase block mb-1 font-semibold">
                     {plan.subtitle}
                   </span>
-                  <h3 className="font-serif text-2xl sm:text-3xl text-[#FAF8F3] uppercase tracking-wide">
+                  <h3 className="font-serif text-2xl sm:text-3xl text-[#FFFFFF] uppercase tracking-wide">
                     {plan.tier}
                   </h3>
                   <div className="mt-4 flex items-baseline justify-center space-x-1">
-                    <span className="font-serif text-4xl sm:text-5xl font-semibold text-[#FAF8F3]">{plan.price}</span>
-                    <span className="text-xs font-sans text-[#F4F0E8]/60 uppercase tracking-widest">{plan.cadence}</span>
+                    <span className="font-serif text-4xl sm:text-5xl font-semibold text-[#FFFFFF]">{plan.price}</span>
+                    <span className="text-xs font-sans text-[#FBE8A6]/80 uppercase tracking-widest">{plan.cadence}</span>
                   </div>
                 </div>
 
-                <p className="font-sans text-xs text-[#F4F0E8]/70 font-light text-center py-5 leading-relaxed">
+                <p className="font-sans text-xs text-[#FFFFFF]/75 text-center font-light py-4">
                   {plan.description}
                 </p>
 
                 {/* Benefits List */}
-                <div className="space-y-2.5 pt-2 pb-6 sm:pb-8">
-                  {plan.benefits.map((benefit, bIdx) => (
-                    <div key={bIdx} className="flex items-start space-x-2.5 text-xs sm:text-sm text-[#FAF8F3]/90 font-light">
-                      <Check className="w-4 h-4 text-[#C8A96B] shrink-0 mt-0.5" />
-                      <span>{benefit}</span>
-                    </div>
+                <ul className="space-y-3 pt-2 pb-6">
+                  {plan.benefits.map((b, idx) => (
+                    <li key={idx} className="flex items-start space-x-2.5 text-xs font-sans text-[#FFFFFF]/90 font-light">
+                      <Check className="w-4 h-4 text-[#FBE8A6] shrink-0 mt-0.5" />
+                      <span>{b}</span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
 
-              {/* Action */}
-              <button
-                onClick={() => handleOpenModal(plan)}
-                data-cursor="book"
-                className={`w-full py-3.5 sm:py-4 text-xs font-sans uppercase tracking-[0.2em] font-semibold transition-all duration-300 cursor-pointer ${
-                  plan.popular
-                    ? 'bg-[#C8A96B] hover:bg-[#D8C08A] text-[#0B0B0B]'
-                    : 'border border-[#C8A96B] hover:bg-[#C8A96B] text-[#FAF8F3] hover:text-[#0B0B0B]'
-                }`}
-              >
-                REQUEST MEMBERSHIP
-              </button>
+              {/* Card Action Button */}
+              <div className="pt-4 border-t border-[#1F1F1F]">
+                <button
+                  onClick={() => handleOpenModal(plan)}
+                  data-cursor="book"
+                  className={`w-full py-3.5 sm:py-4 text-xs font-sans uppercase tracking-[0.2em] font-bold transition-all duration-300 cursor-pointer ${
+                    plan.popular
+                      ? 'bg-[#FBE8A6] hover:bg-[#FFF4CC] text-[#0B0B0B] shadow-lg'
+                      : 'bg-[#1F1F1F] hover:bg-[#FBE8A6] text-[#FFFFFF] hover:text-[#0B0B0B] border border-[#FBE8A6]/30'
+                  }`}
+                >
+                  APPLY FOR {plan.tier}
+                </button>
+              </div>
+
             </div>
           ))}
         </div>
@@ -134,51 +136,37 @@ export const MembershipPrivilege: React.FC<MembershipPrivilegeProps> = ({ onOpen
 
       {/* Membership Application Modal */}
       {selectedPlan && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-[#0B0B0B]/90 backdrop-blur-md animate-fade-in overflow-y-auto">
-          <div className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto bg-[#151515] border border-[#C8A96B]/50 p-5 sm:p-10 shadow-2xl">
-            
+        <div
+          onClick={() => setSelectedPlan(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#0B0B0B]/90 backdrop-blur-md p-4 animate-fade-in"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="bg-[#151515] border border-[#FBE8A6]/50 max-w-lg w-full p-6 sm:p-8 shadow-2xl relative"
+          >
             <button
               onClick={() => setSelectedPlan(null)}
-              className="absolute top-4 right-4 p-2 text-[#FAF8F3]/70 hover:text-[#C8A96B]"
+              aria-label="Close Modal"
+              className="absolute top-4 right-4 p-1 text-[#FFFFFF]/70 hover:text-[#FBE8A6]"
             >
               <X className="w-6 h-6" />
             </button>
 
-            {isSuccess ? (
-              <div className="text-center py-6 sm:py-8 space-y-4">
-                <div className="w-16 h-16 rounded-full bg-[#C8A96B]/20 border border-[#C8A96B] flex items-center justify-center mx-auto text-[#C8A96B]">
-                  <CheckCircle2 className="w-8 h-8" />
-                </div>
-                <h3 className="font-serif text-2xl sm:text-3xl text-[#FAF8F3] uppercase">
-                  APPLICATION RECEIVED
-                </h3>
-                <p className="font-sans text-xs sm:text-sm text-[#F4F0E8]/80 font-light leading-relaxed">
-                  Thank you, <span className="text-[#C8A96B]">{formData.name}</span>. Our Sovereign Concierge will personally review your request for the <strong className="text-[#FAF8F3]">{selectedPlan.tier}</strong> tier and contact you within 24 hours.
-                </p>
-                <button
-                  onClick={() => setSelectedPlan(null)}
-                  className="mt-4 px-8 py-3 bg-[#C8A96B] text-[#0B0B0B] font-sans text-xs uppercase tracking-widest font-semibold"
-                >
-                  RETURN TO SANCTUARY
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleRequestSubmit} className="space-y-3 sm:space-y-4">
-                <div className="flex items-center space-x-2 text-[#C8A96B] text-xs uppercase tracking-widest">
-                  <Crown className="w-4 h-4" />
-                  <span>PRIVILEGE APPLICATION</span>
-                </div>
-
-                <h3 className="font-serif text-2xl sm:text-3xl text-[#FAF8F3] uppercase">
+            {!isSuccess ? (
+              <div>
+                <span className="font-sans text-xs text-[#FBE8A6] uppercase tracking-widest block mb-1">
+                  PRIVILEGE APPLICATION
+                </span>
+                <h3 className="font-serif text-2xl sm:text-3xl text-[#FFFFFF] uppercase">
                   {selectedPlan.tier}
                 </h3>
-                <p className="font-sans text-xs text-[#C8A96B] tracking-wider uppercase font-medium">
+                <p className="font-serif text-lg text-[#FBE8A6] mt-0.5">
                   {selectedPlan.price} {selectedPlan.cadence}
                 </p>
 
-                <div className="pt-2 space-y-3">
+                <form onSubmit={handleRequestSubmit} className="mt-6 space-y-4">
                   <div>
-                    <label className="block text-[11px] font-sans uppercase tracking-widest text-[#FAF8F3]/70 mb-1">
+                    <label className="block font-sans text-xs uppercase tracking-wider text-[#FFFFFF]/80 mb-1">
                       Full Name *
                     </label>
                     <input
@@ -186,62 +174,77 @@ export const MembershipPrivilege: React.FC<MembershipPrivilegeProps> = ({ onOpen
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="e.g. Eleanor Vance"
-                      className="w-full bg-[#0B0B0B] border border-[#C8A96B]/30 px-3 sm:px-4 py-2 text-xs sm:text-sm text-[#FAF8F3] focus:border-[#C8A96B] focus:outline-none"
+                      placeholder="e.g. Lord / Lady Henderson"
+                      className="w-full bg-[#0B0B0B] border border-[#FBE8A6]/30 px-3 py-2 text-sm text-[#FFFFFF] focus:outline-none focus:border-[#FBE8A6]"
                     />
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div>
-                      <label className="block text-[11px] font-sans uppercase tracking-widest text-[#FAF8F3]/70 mb-1">
-                        Email Address *
-                      </label>
-                      <input
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="eleanor@domain.com"
-                        className="w-full bg-[#0B0B0B] border border-[#C8A96B]/30 px-3 sm:px-4 py-2 text-xs sm:text-sm text-[#FAF8F3] focus:border-[#C8A96B] focus:outline-none"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-[11px] font-sans uppercase tracking-widest text-[#FAF8F3]/70 mb-1">
-                        Phone Number *
-                      </label>
-                      <input
-                        type="tel"
-                        required
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+1 (555) 019-2831"
-                        className="w-full bg-[#0B0B0B] border border-[#C8A96B]/30 px-3 sm:px-4 py-2 text-xs sm:text-sm text-[#FAF8F3] focus:border-[#C8A96B] focus:outline-none"
-                      />
-                    </div>
+                  <div>
+                    <label className="block font-sans text-xs uppercase tracking-wider text-[#FFFFFF]/80 mb-1">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      placeholder="noble@sanctuary.in"
+                      className="w-full bg-[#0B0B0B] border border-[#FBE8A6]/30 px-3 py-2 text-sm text-[#FFFFFF] focus:outline-none focus:border-[#FBE8A6]"
+                    />
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-sans uppercase tracking-widest text-[#FAF8F3]/70 mb-1">
-                      Preferred Wellness Objectives / Notes
+                    <label className="block font-sans text-xs uppercase tracking-wider text-[#FFFFFF]/80 mb-1">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      required
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      placeholder="+91 98765 43210"
+                      className="w-full bg-[#0B0B0B] border border-[#FBE8A6]/30 px-3 py-2 text-sm text-[#FFFFFF] focus:outline-none focus:border-[#FBE8A6]"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block font-sans text-xs uppercase tracking-wider text-[#FFFFFF]/80 mb-1">
+                      Personal Wellness Requests
                     </label>
                     <textarea
                       rows={2}
                       value={formData.notes}
                       onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                      placeholder="Any specific therapist preferences, preferred schedule times..."
-                      className="w-full bg-[#0B0B0B] border border-[#C8A96B]/30 px-3 sm:px-4 py-2 text-xs sm:text-sm text-[#FAF8F3] focus:border-[#C8A96B] focus:outline-none"
+                      placeholder="Preferred therapist modality or health notes..."
+                      className="w-full bg-[#0B0B0B] border border-[#FBE8A6]/30 px-3 py-2 text-sm text-[#FFFFFF] focus:outline-none focus:border-[#FBE8A6]"
                     />
                   </div>
-                </div>
 
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full py-3.5 bg-[#FBE8A6] hover:bg-[#FFF4CC] text-[#0B0B0B] font-sans text-xs uppercase tracking-widest font-bold shadow-xl transition-all cursor-pointer"
+                  >
+                    {isSubmitting ? 'PROCESSING PRIVILEGE...' : 'SUBMIT PRIVILEGE APPLICATION'}
+                  </button>
+                </form>
+              </div>
+            ) : (
+              <div className="text-center py-8 space-y-4">
+                <CheckCircle2 className="w-16 h-16 text-[#FBE8A6] mx-auto animate-bounce" />
+                <h4 className="font-serif text-3xl text-[#FFFFFF] uppercase">
+                  APPLICATION RECEIVED
+                </h4>
+                <p className="font-sans text-xs sm:text-sm text-[#FFFFFF]/80 font-light max-w-sm mx-auto">
+                  Your profile has been forwarded to our Head Concierge. We will contact you at <span className="text-[#FBE8A6] font-medium">{formData.phone}</span> within 2 hours.
+                </p>
                 <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full mt-3 py-3 sm:py-3.5 bg-[#C8A96B] hover:bg-[#D8C08A] text-[#0B0B0B] font-sans text-xs uppercase tracking-widest font-bold transition-all disabled:opacity-50"
+                  onClick={() => setSelectedPlan(null)}
+                  className="mt-6 px-6 py-2.5 bg-[#FBE8A6] text-[#0B0B0B] font-sans text-xs uppercase tracking-widest font-bold"
                 >
-                  {isSubmitting ? 'PROCESSING APPLICATION...' : 'SUBMIT MEMBERSHIP APPLICATION'}
+                  RETURN TO SANCTUARY
                 </button>
-              </form>
+              </div>
             )}
 
           </div>

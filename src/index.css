@@ -10,20 +10,22 @@
   --color-charcoal-light: #1F1F1F;
   --color-charcoal-muted: #2A2A2A;
 
-  --color-gold: #C8A96B;
-  --color-gold-royal: #C8A96B;
-  --color-gold-soft: #D8C08A;
-  --color-gold-deep: #9B7E44;
-  --color-gold-light: #E6D5B0;
+  /* Light Yellow / Soft Gold Palette */
+  --color-gold: #FBE8A6;
+  --color-gold-royal: #F4D06F;
+  --color-gold-soft: #FBE8A6;
+  --color-gold-deep: #D4AF37;
+  --color-gold-light: #FFF4CC;
   
-  --color-ivory: #F4F0E8;
-  --color-ivory-warm: #F4F0E8;
-  --color-ivory-champagne: #FAF8F3;
-  --color-ivory-dark: #E2DBD0;
+  --color-yellow-light: #FBE8A6;
+  --color-yellow-soft: #F4D06F;
+  --color-yellow-vibrant: #FFE066;
+  --color-yellow-warm: #E5C07B;
 
-  --color-forest: #18251F;
-  --color-forest-deep: #0F1A15;
-  --color-forest-light: #23382F;
+  --color-ivory: #FAF8F3;
+  --color-ivory-warm: #F4F0E8;
+  --color-ivory-champagne: #FFFFFF;
+  --color-ivory-dark: #E2DBD0;
 
   --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
   --font-display: "Playfair Display", "Cormorant Garamond", Georgia, serif;
@@ -37,12 +39,12 @@ html {
   scroll-behavior: smooth;
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: #0B0B0B;
-  color: #FAF8F3;
+  color: #FFFFFF;
 }
 
 body {
   background-color: #0B0B0B;
-  color: #FAF8F3;
+  color: #FFFFFF;
   overflow-x: hidden;
 }
 
@@ -58,34 +60,34 @@ body {
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #C8A96B;
+  background: #FBE8A6;
 }
 
 /* Luxury Grain & Texture Overlay */
 .luxury-noise {
-  background-image: radial-gradient(rgba(200, 169, 107, 0.04) 1px, transparent 0);
+  background-image: radial-gradient(rgba(251, 232, 166, 0.04) 1px, transparent 0);
   background-size: 24px 24px;
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #F4F0E8 0%, #D8C08A 45%, #C8A96B 80%, #9B7E44 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF4CC 35%, #FBE8A6 70%, #F4D06F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Glassmorphism Luxury */
 .glass-luxury-dark {
-  background: rgba(11, 11, 11, 0.75);
+  background: rgba(11, 11, 11, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(200, 169, 107, 0.15);
+  border: 1px solid rgba(251, 232, 166, 0.2);
 }
 
 .glass-luxury-light {
-  background: rgba(244, 240, 232, 0.85);
+  background: rgba(21, 21, 21, 0.9);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(200, 169, 107, 0.25);
+  border: 1px solid rgba(251, 232, 166, 0.3);
 }
 
 /* Hide scrollbar for clean horizontal scrolls */

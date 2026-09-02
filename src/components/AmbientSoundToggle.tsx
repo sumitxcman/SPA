@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Volume2, VolumeX, Sparkles } from 'lucide-react';
+import { Volume2, VolumeX } from 'lucide-react';
 
 export const AmbientSoundToggle: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -19,7 +19,7 @@ export const AmbientSoundToggle: React.FC = () => {
       masterGain.connect(ctx.destination);
       gainNodeRef.current = masterGain;
 
-      // 432 Hz Solfeggio / Meditative frequencies
+      // 432 Hz Solfeggio frequencies
       const frequencies = [108, 216, 432, 648];
 
       frequencies.forEach((freq, idx) => {
@@ -29,7 +29,6 @@ export const AmbientSoundToggle: React.FC = () => {
         osc.type = idx === 0 ? 'sine' : 'triangle';
         osc.frequency.setValueAtTime(freq, ctx.currentTime);
 
-        // Gentle lfo modulation
         const lfo = ctx.createOscillator();
         lfo.frequency.setValueAtTime(0.1 + idx * 0.05, ctx.currentTime);
         const lfoGain = ctx.createGain();
@@ -89,19 +88,19 @@ export const AmbientSoundToggle: React.FC = () => {
         data-cursor="pointer"
         className={`flex items-center space-x-2.5 px-4 py-2.5 border rounded-none text-xs font-sans uppercase tracking-[0.2em] transition-all duration-300 backdrop-blur-md shadow-xl ${
           isPlaying
-            ? 'bg-[#C8A96B] text-[#0B0B0B] border-[#C8A96B] shadow-[0_0_20px_rgba(200,169,107,0.3)]'
-            : 'bg-[#0B0B0B]/85 text-[#FAF8F3]/80 hover:text-[#C8A96B] border-[#C8A96B]/30 hover:border-[#C8A96B]'
+            ? 'bg-[#FBE8A6] text-[#0B0B0B] border-[#FBE8A6] shadow-[0_0_20px_rgba(251,232,166,0.35)] font-bold'
+            : 'bg-[#0B0B0B]/90 text-[#FFFFFF]/80 hover:text-[#FBE8A6] border-[#FBE8A6]/30 hover:border-[#FBE8A6]'
         }`}
         aria-label="Toggle Spa Atmospheric Drone"
       >
         {isPlaying ? (
           <>
             <Volume2 className="w-3.5 h-3.5 animate-pulse text-[#0B0B0B]" />
-            <span className="font-semibold text-[10px]">ATMOSPHERE: ON</span>
+            <span className="font-bold text-[10px]">ATMOSPHERE: ON</span>
           </>
         ) : (
           <>
-            <VolumeX className="w-3.5 h-3.5 text-[#C8A96B]" />
+            <VolumeX className="w-3.5 h-3.5 text-[#FBE8A6]" />
             <span className="text-[10px]">ATMOSPHERE: OFF</span>
           </>
         )}
