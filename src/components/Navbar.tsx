@@ -67,11 +67,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               </g>
             </svg>
           </div>
-          <div>
-            <span className="block font-serif text-sm md:text-base font-semibold tracking-royal text-[#FAF8F3] uppercase leading-tight group-hover:text-[#C8A96B] transition-colors">
+          <div className="flex items-center space-x-2 whitespace-nowrap">
+            <span className="font-serif text-sm sm:text-base font-semibold tracking-wider text-[#FAF8F3] uppercase leading-none group-hover:text-[#C8A96B] transition-colors">
               THE ROYAL
             </span>
-            <span className="block font-sans text-[10px] tracking-[0.25em] text-[#C8A96B] uppercase font-light">
+            <span className="font-sans text-[10px] sm:text-[11px] tracking-[0.2em] text-[#C8A96B] uppercase font-medium leading-none">
               MASSAGE SPA
             </span>
           </div>
