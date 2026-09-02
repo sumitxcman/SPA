@@ -81,64 +81,64 @@ export const SIGNATURE_EXPERIENCES: SignatureCard[] = [
     id: 'exp-1',
     number: '01',
     title: 'THE ROYAL SIGNATURE',
-    tagline: 'Imperial Head-to-Toe Rejuvenation',
-    description: 'An expansive multi-sensory journey combining warm rare botanical oils, slow rhythm myofascial sculpting, and gold-leaf infused compressions for sovereign tranquility.',
+    tagline: 'Imperial Rejuvenation',
+    description: 'Warm rare botanical oils, myofascial sculpting, and gold-leaf infused compressions for sovereign tranquility.',
     duration: '120 MIN',
     price: '₹4,500',
     image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop',
-    highlight: 'Includes 24k Gold Botanical Elixir & Private Jacuzzi Soak',
+    highlight: '24k Gold Botanical Elixir & Private Jacuzzi',
     ritualSteps: [
-      'Warm Cedarwood & Rose Welcome Foot Ablution',
-      'Full Body Synchronized Warm Herbal Compress',
-      'Imperial Marma Point Acupressure & Scalp Serenity'
+      'Cedarwood & Rose Welcome Foot Ablution',
+      'Synchronized Warm Herbal Compress',
+      'Marma Point Acupressure & Scalp Serenity'
     ]
   },
   {
     id: 'exp-2',
     number: '02',
     title: 'DEEP REST & STILLNESS',
-    tagline: 'Somatic Nervous System Recalibration',
-    description: 'Designed specifically to quiet an overstimulated mind. Gentle passive stretching, weighted warm basalt stones, and rhythmic lomi strokes release deep emotional fatigue.',
+    tagline: 'Somatic Decompression',
+    description: 'Heated volcanic basalt stones and rhythmic lomi strokes to release deep structural tension.',
     duration: '90 MIN',
     price: '₹3,500',
     image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1200&auto=format&fit=crop',
-    highlight: 'Heated Volcanic Stones & Herbal Sauna Access',
+    highlight: 'Volcanic Stones & Herbal Sauna Access',
     ritualSteps: [
-      'Tibetan Singing Bowl Sound Bath Induction',
-      'Magnesium Infused Muscle De-tensioning',
-      'Warm Chamomile & Vetiver Temple Therapy'
+      'Tibetan Singing Bowl Sound Bath',
+      'Magnesium Muscle De-tensioning',
+      'Chamomile & Vetiver Temple Therapy'
     ]
   },
   {
     id: 'exp-3',
     number: '03',
     title: 'AROMA BOTANICA RITUAL',
-    tagline: 'Rare Terroir Aromatics & Sensory Transcendence',
-    description: 'Custom-distilled oud, wild neroli, and sandalwood essences inhaled through steam and applied with continuous lymphatic strokes to elevate mood and vital radiance.',
+    tagline: 'Rare Terroir Aromatics',
+    description: 'Cold-pressed wild neroli, oud, and sandalwood essences with continuous fluid lymphatic strokes.',
     duration: '75 MIN',
     price: '₹2,800',
     image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1200&auto=format&fit=crop',
     highlight: 'Wild Harvested Organic Essential Elixirs',
     ritualSteps: [
-      'Aromatherapeutic Olfactory Consultation',
-      'Full Body Fluid Rhythms & Acupressure',
-      'Warm Floral Mist & Herbal Tonic Awakening'
+      'Olfactory Scent Consultation',
+      'Fluid Lymphatic Meridians',
+      'Warm Floral Mist Awakening'
     ]
   },
   {
     id: 'exp-4',
     number: '04',
     title: 'COUPLES IMPERIAL ESCAPE',
-    tagline: 'Dual Private Sanctuary Experience',
-    description: 'A secluded private suite retreat for two. Side-by-side bespoke restorative massages followed by an artisan private jacuzzi bath and herbal tea service.',
+    tagline: 'Dual Private Sanctuary',
+    description: 'Side-by-side restorative massages followed by an artisan private jacuzzi bath and herbal tea service.',
     duration: '150 MIN',
     price: '₹7,500',
     image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200&auto=format&fit=crop',
-    highlight: 'Private Candlelit Suite, Jacuzzi & Rose Petal Bath',
+    highlight: 'Private Candlelit Suite, Jacuzzi & Rose Bath',
     ritualSteps: [
-      'Private Suite Welcome with Vintage Herbal Nectar',
-      'Synchronized 90-Minute Custom Couple Massages',
-      'Mineralized Jacuzzi Bath & Private Lounge Confection'
+      'Private Suite Welcome Elixir',
+      'Synchronized 90-Min Couple Massages',
+      'Mineralized Jacuzzi & Lounge Delicacies'
     ]
   }
 ];
@@ -150,11 +150,11 @@ export const TREATMENTS_DATA: Treatment[] = [
     name: 'Royal Relaxation Massage',
     category: 'massages',
     tagline: 'Effortless serenity through fluid, rhythmic strokes.',
-    description: 'Our hallmark Swedish-influenced holistic massage using long gliding movements, warm organic jojoba oil, and light pressure to melt everyday stress.',
+    description: 'Swedish-style long gliding strokes with warm organic jojoba oil to melt away daily stress.',
     duration: '60 / 90 MIN',
     price: '₹2,200 / ₹3,100',
-    benefits: ['Lowers cortisol levels', 'Promotes deep sleep', 'Improves peripheral circulation'],
-    scents: ['Sweet Orange', 'French Lavender', 'Bergamot'],
+    benefits: ['Lowers cortisol', 'Deep sleep', 'Better circulation'],
+    scents: ['Sweet Orange', 'Lavender', 'Bergamot'],
     image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'relaxed'
   },
@@ -163,10 +163,10 @@ export const TREATMENTS_DATA: Treatment[] = [
     name: 'Deep Tissue Recovery',
     category: 'massages',
     tagline: 'Targeted myofascial release for chronic muscle tension.',
-    description: 'Precise, concentrated pressure addressing deep connective tissues, sports strain, and postural misalignments using cooling arnica balm.',
+    description: 'Concentrated pressure with cooling arnica balm for deep knot release and muscle recovery.',
     duration: '60 / 90 MIN',
     price: '₹2,500 / ₹3,400',
-    benefits: ['Releases stubborn trigger points', 'Restores joint mobility', 'Alleviates lumbar stiffness'],
+    benefits: ['Trigger point relief', 'Joint mobility', 'Spine release'],
     scents: ['Eucalyptus', 'Wintergreen', 'Black Pepper'],
     image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'restored'
@@ -176,11 +176,11 @@ export const TREATMENTS_DATA: Treatment[] = [
     name: 'Aromatherapy Sovereign',
     category: 'massages',
     tagline: 'Bespoke rare botanical essences infused with holistic bodywork.',
-    description: 'You select from our private collection of artisanal botanical extracts. Applied gently along lymphatic meridians to harmonize physical and emotional wellness.',
+    description: 'Custom organic extracts applied along energy meridians to balance body and mind.',
     duration: '75 / 90 MIN',
     price: '₹2,600 / ₹3,500',
-    benefits: ['Emotional uplift & clarity', 'Lymphatic detoxification', 'Nourishes dry skin'],
-    scents: ['Wild Neroli', 'Frankincense', 'Mysore Sandalwood'],
+    benefits: ['Mental clarity', 'Lymphatic detox', 'Radiant skin'],
+    scents: ['Wild Neroli', 'Frankincense', 'Sandalwood'],
     image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'recharged'
   },
@@ -189,11 +189,11 @@ export const TREATMENTS_DATA: Treatment[] = [
     name: 'Obsidian Hot Stone Therapy',
     category: 'massages',
     tagline: 'Warm volcanic stones penetrating deep within muscle layers.',
-    description: 'Hand-shaped basalt stones heated in mineral water and positioned along chakra energy centers, radiating soothing warmth that melts structural tension.',
+    description: 'Heated mineral basalt stones along chakra centers radiating deep soothing warmth.',
     duration: '90 MIN',
     price: '₹3,600',
-    benefits: ['Thermal muscle relaxation', 'Expands energy flow', 'Relieves vascular congestion'],
-    scents: ['Amber Resin', 'Cedarwood', 'Vanilla Pod'],
+    benefits: ['Thermal release', 'Energy flow', 'Tension relief'],
+    scents: ['Amber', 'Cedarwood', 'Vanilla Pod'],
     image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'renewed'
   },
@@ -202,11 +202,11 @@ export const TREATMENTS_DATA: Treatment[] = [
     name: 'Balinese Royal Ritual',
     category: 'massages',
     tagline: 'Exotic island bodywork blending acupressure and gentle stretching.',
-    description: 'An ancient palace ritual employing thumb-and-palm pressure, skin rolling, and essential flower oils to awaken the body’s innate vital qi.',
+    description: 'Palace acupressure, skin rolling, and floral oils to awaken vital energy pathways.',
     duration: '90 MIN',
     price: '₹3,200',
-    benefits: ['Stimulates chi circulation', 'Unwinds spinal tension', 'Skin renewal'],
-    scents: ['Jasmine Sambac', 'Frangipani', 'Patchouli'],
+    benefits: ['Vital qi flow', 'Spinal ease', 'Skin nourishment'],
+    scents: ['Jasmine', 'Frangipani', 'Patchouli'],
     image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'renewed'
   },
@@ -216,12 +216,12 @@ export const TREATMENTS_DATA: Treatment[] = [
     id: 'stress-relief-ritual',
     name: 'Stress Relief Sanctuary',
     category: 'rituals',
-    tagline: 'A comprehensive unwind for adrenal reset.',
-    description: 'Begins with an herbal foot bath, followed by warm paraffin back application, soothing scalp therapy, and full-body decompression.',
+    tagline: 'Comprehensive adrenal reset and scalp de-tensioning.',
+    description: 'Warm paraffin back application, soothing scalp therapy, and full-body decompression.',
     duration: '100 MIN',
     price: '₹3,800',
-    benefits: ['Calms nervous agitation', 'Deep adrenal recharge', 'Headache relief'],
-    scents: ['Roman Chamomile', 'Clary Sage', 'Geranium'],
+    benefits: ['Calms nervous system', 'Adrenal recharge', 'Headache relief'],
+    scents: ['Chamomile', 'Clary Sage', 'Geranium'],
     image: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'relaxed'
   },
@@ -229,12 +229,12 @@ export const TREATMENTS_DATA: Treatment[] = [
     id: 'sleep-restore',
     name: 'Sleep & Somatic Restore',
     category: 'rituals',
-    tagline: 'Engineered specifically to alleviate chronic insomnia.',
-    description: 'Gentle cranial sacral holds, warm magnesium compresses, and slow hypnotic wave strokes calibrated to induce theta-wave brain states.',
+    tagline: 'Engineered specifically to alleviate mental fatigue & insomnia.',
+    description: 'Gentle cranial holds, warm magnesium compresses, and theta-wave rhythmic strokes.',
     duration: '90 MIN',
     price: '₹3,300',
-    benefits: ['Deep restorative sleep induction', 'Relieves mental chatter', 'Nervous system reset'],
-    scents: ['Valerian Root', 'Lavender Fine', 'Vetiver'],
+    benefits: ['Restorative sleep', 'Mental calm', 'Nervous reset'],
+    scents: ['Valerian', 'Lavender', 'Vetiver'],
     image: 'https://images.unsplash.com/photo-1544717302-de2939b7ef71?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'restored'
   },
@@ -243,11 +243,11 @@ export const TREATMENTS_DATA: Treatment[] = [
     name: 'Cranial & Cervical Serenity',
     category: 'rituals',
     tagline: 'Specialized focus for screen fatigue and upper-body strain.',
-    description: 'Targeted release for the neck, trapezoids, jaw, and cranium utilizing warm herbal oil and jade combs to disperse accumulated digital fatigue.',
+    description: 'Targeted neck, jaw, and cranium release with warm herbal oil and jade combs.',
     duration: '45 MIN',
     price: '₹1,800',
-    benefits: ['Eases screen-induced neck strain', 'Temporomandibular relief', 'Visual clarity'],
-    scents: ['Peppermint', 'Rosemary', 'Sweet Basil'],
+    benefits: ['Neck relief', 'TMJ ease', 'Visual clarity'],
+    scents: ['Peppermint', 'Rosemary', 'Basil'],
     image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'recharged'
   },
@@ -256,10 +256,10 @@ export const TREATMENTS_DATA: Treatment[] = [
     name: 'Imperial Foot & Reflexology',
     category: 'rituals',
     tagline: 'Restoration through ancient reflex zone activation.',
-    description: 'Warm Himalayan salt soak, botanical scrub exfoliation, followed by deep pressure point stimulation across 60+ neural pathways on both feet.',
+    description: 'Himalayan salt soak, scrub exfoliation, and deep pressure across neural foot pathways.',
     duration: '60 MIN',
     price: '₹1,950',
-    benefits: ['Grounds somatic energy', 'Reduces lower leg edema', 'Organ reflex stimulation'],
+    benefits: ['Grounds energy', 'Reduces swelling', 'Reflex stimulation'],
     scents: ['Lemongrass', 'Ginger Lily', 'Spearmint'],
     image: 'https://images.unsplash.com/photo-1519824145371-296894a0daa9?q=80&w=800&auto=format&fit=crop',
     recommendedMood: 'renewed'
@@ -271,43 +271,43 @@ export const MOOD_OPTIONS: MoodOption[] = [
     id: 'relaxed',
     label: 'RELAXED',
     title: 'Drift Into Absolute Serenity',
-    subtext: 'For when the mind needs quietude, the muscles need softening, and you wish to simply let the world pause.',
+    subtext: 'Quiet the mind and soften tired muscles.',
     recommendedTreatment: 'Royal Relaxation & Lavender Warm Stone',
     treatmentPrice: '₹3,100',
     treatmentDuration: '90 MIN',
     aromaNote: 'Provence Lavender & French Bergamot',
-    technique: 'Continuous Gliding Effleurage & Gentle Acupressure',
+    technique: 'Continuous Gliding Effleurage',
     bgImage: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1600&auto=format&fit=crop'
   },
   {
     id: 'restored',
     label: 'RESTORED',
-    title: 'Heal Deep Fatigue & Tension',
-    subtext: 'For chronic muscle aches, postural strain from demanding schedules, and intensive physical renewal.',
+    title: 'Heal Deep Muscle Tension',
+    subtext: 'Intensive physical renewal for demanding schedules.',
     recommendedTreatment: 'Deep Tissue Recovery & Arnica Elixir',
     treatmentPrice: '₹3,400',
     treatmentDuration: '90 MIN',
     aromaNote: 'Eucalyptus, Wintergreen & Black Pepper',
-    technique: 'Targeted Cross-Fiber Friction & Myofascial Unwinding',
+    technique: 'Targeted Cross-Fiber Myofascial Release',
     bgImage: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=1600&auto=format&fit=crop'
   },
   {
     id: 'recharged',
     label: 'RECHARGED',
     title: 'Awaken Dynamic Vital Energy',
-    subtext: 'For combating sluggishness, clearing mental fog, and elevating personal vitality to peak performance.',
+    subtext: 'Combat sluggishness and elevate personal vitality.',
     recommendedTreatment: 'Aromatherapy Sovereign & Lymphatic Flow',
     treatmentPrice: '₹3,500',
     treatmentDuration: '90 MIN',
     aromaNote: 'Wild Neroli, Grapefruit & Sandalwood',
-    technique: 'Rhythmic Percussion & Energizing Meridians',
+    technique: 'Rhythmic Energizing Meridians',
     bgImage: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1600&auto=format&fit=crop'
   },
   {
     id: 'renewed',
     label: 'RENEWED',
     title: 'Complete Mind-Body Metamorphosis',
-    subtext: 'For a fresh beginning. Full physical detoxification, cellular nourishment, and radiant spiritual glow.',
+    subtext: 'Full physical detox and radiant wellness glow.',
     recommendedTreatment: 'The Royal Signature 24k Gold Experience',
     treatmentPrice: '₹4,500',
     treatmentDuration: '120 MIN',
@@ -322,37 +322,37 @@ export const RITUAL_JOURNEY_STEPS: RitualStep[] = [
     number: '01',
     step: 'ARRIVE',
     title: 'The Portal of Silence',
-    subtitle: 'Leaving the noise of Delhi behind',
-    description: 'You are greeted by your dedicated wellness concierge in Sector 6 Dwarka. Phones are secured, shoes are exchanged for silk slippers, and a chilled floral infusion calms your pulse.',
+    subtitle: 'Leaving Delhi behind',
+    description: 'Chilled floral welcome infusion, private consultation, and personalized aroma selection.',
     image: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?q=80&w=1000&auto=format&fit=crop',
-    details: ['Private Consultation Lounge', 'Signature Herbal Elixir', 'Personal Olfactory Scent Selection']
+    details: ['Private Consultation Lounge', 'Signature Herbal Elixir', 'Scent Customization']
   },
   {
     number: '02',
     step: 'UNWIND',
-    title: 'Thermal Sauna & Jacuzzi Immersion',
-    subtitle: 'Preparing the body for deep receptivity',
-    description: 'Relax within our eucalyptus-infused marble steam chamber, sauna, and warm mineral jacuzzi bath to soften fascia, open pores, and quiet mental agitation.',
+    title: 'Thermal Sauna & Jacuzzi',
+    subtitle: 'Softening the body',
+    description: 'Marble eucalyptus steam, heated sauna, and warm mineral jacuzzi bath to open pores and quiet the mind.',
     image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop',
-    details: ['Eucalyptus Marble Steam Suite', 'Thermal Jacuzzi & Sauna Access', 'Tibetan Resonance Tuning']
+    details: ['Eucalyptus Steam Suite', 'Thermal Jacuzzi & Sauna', 'Tibetan Sound Tuning']
   },
   {
     number: '03',
     step: 'RESTORE',
-    title: 'The Master Bodywork Ceremony',
+    title: 'Master Bodywork Ceremony',
     subtitle: 'Somatic expertise meets sovereign comfort',
-    description: 'Lying upon our ergonomic heated cloud tables in ultra-hygienic private suites, your master therapist applies custom-blended warm oils with calibrated, unhurried precision.',
+    description: 'Ergonomic heated cloud tables and custom warm botanical oils applied with calibrated precision.',
     image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1000&auto=format&fit=crop',
-    details: ['Handmade Botanical Terroir Oils', 'Heated Cloud Cushioning', 'Hygienic Private Suites']
+    details: ['Handmade Terroir Oils', 'Heated Cloud Cushioning', 'Hygienic Private Suites']
   },
   {
     number: '04',
     step: 'RENEW',
     title: 'Awakening in the Tea Pavilion',
-    subtitle: 'Gently returning to the world transformed',
-    description: 'Transition leisurely in the quiet relaxation rotunda with artisanal rare herbal teas and organic refreshments before stepping back into reality completely rejuvenated.',
+    subtitle: 'Returning transformed',
+    description: 'Relaxation rotunda with rare single-estate herbal teas and organic refreshments.',
     image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=1000&auto=format&fit=crop',
-    details: ['Single-Estate Herbal Tea Service', 'Organic Delicacies', 'Personalized Home Care Guidance']
+    details: ['Single-Estate Herbal Tea', 'Organic Delicacies', 'Home Care Guidance']
   }
 ];
 
@@ -396,6 +396,30 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1200&auto=format&fit=crop',
     aspect: 'col-span-1 md:col-span-2',
     description: 'Side-by-side couple therapy beds with private jacuzzi bath.'
+  },
+  {
+    id: 'g-6',
+    title: 'Obsidian Volcanic Therapy',
+    category: 'Hot Stone',
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop',
+    aspect: 'col-span-1',
+    description: 'Mineral-heated basalt stones positioned along chakra energy points.'
+  },
+  {
+    id: 'g-7',
+    title: 'Tea Rotunda & Organic Elixirs',
+    category: 'Lounge & Teas',
+    image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=1000&auto=format&fit=crop',
+    aspect: 'col-span-1',
+    description: 'Rare white herbal teas and dried organic delicacies in our quiet lounge.'
+  },
+  {
+    id: 'g-8',
+    title: 'Aromatherapy Alchemy Suite',
+    category: 'Botanical Atelier',
+    image: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=1000&auto=format&fit=crop',
+    aspect: 'col-span-1 md:col-span-2',
+    description: 'Artisanal organic distillation of wild flowers, resins, and essential balms.'
   }
 ];
 
@@ -430,7 +454,7 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
     subtitle: 'Monthly Sacred Routine',
     price: '₹2,999',
     cadence: '/ month',
-    description: 'Designed for the discerning individual who treats restorative wellness as a non-negotiable monthly discipline.',
+    description: '1 Bespoke 90-Min Treatment, 24/7 priority booking, and complimentary Jacuzzi & Steam access.',
     benefits: [
       '1 Bespoke 90-Minute Signature Treatment per month',
       'Priority 24/7 reservation window',
@@ -445,7 +469,7 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
     price: '₹5,499',
     cadence: '/ month',
     popular: true,
-    description: 'Our most coveted tier for comprehensive bi-weekly physical restoration, priority suites, and guest privileges.',
+    description: '2 Bespoke 90-Min Treatments, VIP suite allocation, and unlimited Jacuzzi, Sauna & Steam access.',
     benefits: [
       '2 Bespoke 90-Minute or 1 120-Minute Royal Signature per month',
       'Guaranteed VIP suite allocation',
@@ -460,7 +484,7 @@ export const MEMBERSHIP_PLANS: MembershipPlan[] = [
     subtitle: 'The Ultimate Sanctuary Access',
     price: '₹9,999',
     cadence: '/ month',
-    description: 'Unlimited access to the sanctuary private lounge, personalized master therapist dedication, and 24/7 concierge support.',
+    description: '4 Master Treatments per month, dedicated Master Therapist, and 24/7 round-the-clock priority access.',
     benefits: [
       '4 Bespoke 90-Minute Master Treatments per month',
       'Dedicated Master Therapist assigned to your profile',
@@ -482,18 +506,18 @@ export const SPA_STATS = [
 export const FAQS = [
   {
     q: 'Where is The Royal Massage Spa located in Delhi?',
-    a: 'We are located at Central Market, Sec-6 Market, Sector 6 Dwarka, Dwarka, Delhi, 110075 (Plus Code: H3R6+43 Delhi). Conveniently accessible with ample parking.'
+    a: 'Central Market, Sec-6 Market, Sector 6 Dwarka, Dwarka, Delhi, 110075 (Plus Code: H3R6+43 Delhi). Conveniently accessible with ample parking.'
   },
   {
     q: 'What are your operational hours?',
-    a: 'We are open 24 Hours, 7 days a week (Monday through Sunday) to accommodate your schedule at any hour.'
+    a: 'We are open 24 Hours, 7 days a week (Monday through Sunday).'
   },
   {
     q: 'What all-inclusive facilities are available with treatments?',
-    a: 'Our sanctuary features full-service Jacuzzi, detoxifying Sauna, eucalyptus Steam rooms, and private hygienic treatment rooms available alongside your bodywork.'
+    a: 'Jacuzzi, detoxifying Sauna, eucalyptus Steam rooms, and private hygienic treatment suites.'
   },
   {
     q: 'How can I book an appointment?',
-    a: 'You can instantly reserve online through our website booking system, call us directly, or connect with our concierge via WhatsApp at any hour.'
+    a: 'Reserve online instantly, call our line, or chat with our 24/7 WhatsApp concierge.'
   }
 ];
