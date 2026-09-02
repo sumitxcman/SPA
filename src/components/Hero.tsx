@@ -11,15 +11,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       id="hero"
       className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden bg-[#FAFAFA]"
     >
-      {/* Background Image: Vivid Luxury Spa Sanctuary */}
+      {/* 100% Crystal-Clear HD Luxury Spa Sanctuary Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2000&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=95&w=2400&auto=format&fit=crop"
           alt="The Royal Massage Spa Sanctuary Interior"
-          className="w-full h-full object-cover object-center scale-105 transition-transform duration-[12000ms] ease-out hover:scale-100 filter brightness-95 opacity-85"
+          className="w-full h-full object-cover object-center scale-100 transition-transform duration-[12000ms] ease-out hover:scale-105"
         />
-        {/* Clean Lateral Gradient for Legibility */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/70 to-transparent" />
+        {/* Subtle Edge Vignette */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#FAFAFA] via-transparent to-white/30" />
       </div>
 
