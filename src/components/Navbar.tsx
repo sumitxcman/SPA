@@ -48,8 +48,24 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           href="#hero"
           className="group flex items-center space-x-3 text-left focus:outline-none"
         >
-          <div className="w-9 h-9 rounded-full border border-[#C8A96B]/60 flex items-center justify-center bg-[#151515] group-hover:border-[#C8A96B] transition-colors duration-300">
-            <Crown className="w-4 h-4 text-[#C8A96B]" />
+          <div className="w-9 h-9 rounded-full border border-[#C8A96B]/60 flex items-center justify-center bg-[#151515] group-hover:border-[#C8A96B] transition-all duration-300 shadow-[0_0_12px_rgba(200,169,107,0.2)]">
+            <svg className="w-5 h-5" viewBox="0 0 100 100" fill="none">
+              <defs>
+                <linearGradient id="navLogoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FAF8F3" />
+                  <stop offset="40%" stop-color="#D8C08A" />
+                  <stop offset="75%" stop-color="#C8A96B" />
+                  <stop offset="100%" stop-color="#9B7E44" />
+                </linearGradient>
+              </defs>
+              <g fill="url(#navLogoGold)">
+                <path d="M50 20 C50 20 38 38 38 52 C38 60 43 68 50 68 C57 68 62 60 62 52 C62 38 50 20 50 20 Z" />
+                <path d="M48 66 C35 66 22 55 24 40 C28 48 36 56 46 62 Z" opacity="0.9" />
+                <path d="M52 66 C65 66 78 55 76 40 C72 48 64 56 54 62 Z" opacity="0.9" />
+                <path d="M30 72 C40 78 60 78 70 72 C62 76 38 76 30 72 Z" />
+                <circle cx="50" cy="14" r="3" />
+              </g>
+            </svg>
           </div>
           <div>
             <span className="block font-serif text-sm md:text-base font-semibold tracking-royal text-[#FAF8F3] uppercase leading-tight group-hover:text-[#C8A96B] transition-colors">
